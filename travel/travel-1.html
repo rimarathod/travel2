@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.destination, .offer {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+}
+
+.destination img, .offer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.destination h3, .offer h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.offer .btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.offer .btn:hover {
+    background-color: #555;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form select, form input[type="date"], form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Explore Your Next Adventure</h1>
+            <nav>
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#offers">Special Offers</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="destinations" class="section">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destination">
+                <img src="D:\paris.jpg" >
+                <h3>Destination 1</h3>
+                <p>PARIS.</p>
+            </div>
+            <div class="destination">
+                <img src="D:\new york1.jpg">
+                <h3>Destination 2</h3>
+                <p>NEW YORK.</p>
+            </div>
+            <!-- Add more destinations as needed -->
+        </div>
+    </section>
+
+    <section id="offers" class="section">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <div class="offer">
+                <h3>Offer Title 1</h3>
+                <p>Description of Offer 1.</p>
+                <a href="#" class="btn">View Offer</a>
+            </div>
+            <div class="offer">
+                <h3>Offer Title 2</h3>
+                <p>Description of Offer 2.</p>
+                <a href="#" class="btn">View Offer</a>
+            </div>
+            <!-- Add more offers as needed -->
+        </div>
+    </section>
+
+    <section id="booking" class="section">
+        <div class="container">
+            <h2>Book Your Trip</h2>
+            <form>
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="destination1">Destination 1</option>
+                    <option value="destination2">Destination 2</option>
+                    <!-- Add more destination options as needed -->
+                </select>
+                <label for="dates">Dates:</label>
+                <input type="date" id="dates" name="dates">
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
